@@ -1,3 +1,4 @@
+
 const ingredients = [
   'Potatoes',
   'Mushrooms',
@@ -7,7 +8,7 @@ const ingredients = [
   'Condiments',
 ];
 
-const ingredientsEl = document.querySelector('ul');
+const ingredientsEl = document.querySelector('#ingredients');
 
 const elements = ingredients.map(element => {
 
