@@ -10,8 +10,9 @@ buttonEl.addEventListener('click', onButtonClick);
 
 
 function onButtonClick() {
-  document.body.style.backgroundColor  = getRandomHexColor();
-  colorEl.textContent = getRandomHexColor();
+  let color = getRandomHexColor();
+  document.body.style.backgroundColor  = color;
+  colorEl.textContent = color;
 };
 
 

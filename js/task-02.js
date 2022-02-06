@@ -15,6 +15,8 @@ const elements = ingredients.map(element => {
   const itemEl = document.createElement('li');
   itemEl.textContent = element;
   itemEl.classList.add('item');
-  ingredientsEl.append(itemEl);
-
+  return itemEl;
 });
+
+ingredientsEl.append(...elements);
+
