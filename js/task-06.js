@@ -8,15 +8,20 @@ inputEl.addEventListener('blur', onInputBlur);
 
 
 
-function onInputBlur() {
+function onInputBlur(event) {
 
-    if (valid === inputEl.value.length) {
+    if (valid === event.currentTarget.value.length) {
+              inputEl.classList.remove('invalid');
+
         inputEl.classList.add('valid');
-        return;
-    }
+
+    } else {
+         inputEl.classList.remove('valid');
 
         inputEl.classList.add('invalid');
+    }
 
-
+  
+    
 };
 
